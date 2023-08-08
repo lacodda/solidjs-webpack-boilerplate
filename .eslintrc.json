@@ -1,4 +1,8 @@
 {
+  "extends": [
+    "eslint:recommended",
+    "plugin:solid/typescript"
+  ],
   "rules": {
     "arrow-body-style": 1,
     "camelcase": 1,
@@ -45,15 +49,18 @@
     "es6": true,
     "node": true
   },
-  "extends": [
-    "eslint:recommended",
-    "plugin:solid/typescript"
-  ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaVersion": "latest",
     "sourceType": "module",
     "project": "./tsconfig.json"
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      }
+    }
   },
   "plugins": ["solid"]
 }

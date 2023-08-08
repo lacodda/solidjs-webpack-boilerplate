@@ -11,6 +11,8 @@
     "target": "ESNext",
     "module": "ESNext",
     "lib": ["ESNext", "dom"],
+    "jsx": "preserve",
+    "jsxImportSource": "solid-js",
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "esModuleInterop": true,
@@ -18,18 +20,8 @@
     "resolveJsonModule": true,
     "baseUrl": ".",
     "outDir": "dist",
-    "jsx": "preserve",
-    "jsxImportSource": "solid-js",
-    // "allowSyntheticDefaultImports": true,
-    // "strict": true,
-    // "forceConsistentCasingInFileNames": true,
-    // "isolatedModules": true,
-    // "noEmit": true,
     "paths": {
-      "@/*": ["src/*"],
-      "*": ["node_modules/*"],
-      "@assets/*": ["./assets/*"],
-      "@src/*": ["./src/*"]
+      "@/*": ["src/*"]
     }
   },
   "exclude": ["node_modules", "dist"]

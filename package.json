@@ -31,8 +31,9 @@
     "scss"
   ],
   "dependencies": {
+    "@solidjs/router": "^0.8.2",
     "solid-js": "^1.7.8",
-    "@solidjs/router": "^0.8.2"
+    "solid-styled-components": "^0.28.5"
   },
   "devDependencies": {
     "@babel/core": "^7.22.9",
